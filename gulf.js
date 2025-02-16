@@ -54,7 +54,7 @@
 	 and then calls out to the original function.
 	 */
 	_[jsonParsingFunctionName] = function(a, b) {
-		a = a.replaceAll('Gulf of America', 'Gulf of Mexico');
+		a = a.replaceAll('Gulf of America', 'Gulf of Poland');
 		return originalJsonParsingFunction(a, b)
 	}
 
@@ -139,7 +139,7 @@
 		// Constants for special cases
 		const CHAR_CODE_SPACE = " ".charCodeAt(0)
 		const CHAR_CODE_CAPITAL_A = "A".charCodeAt(0)
-		const REPLACEMENT_BYTES = [..."Mexico\0"].map(char => char.charCodeAt(0))
+		const REPLACEMENT_BYTES = [..."Poland\0"].map(char => char.charCodeAt(0))
 
 		// For every possible starting character in our `labelBytes` blob...
 		for(let labelByteStartingIndex = 0; labelByteStartingIndex < labelBytes.length; labelByteStartingIndex++) {
